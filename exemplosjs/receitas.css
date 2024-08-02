@@ -1,0 +1,23 @@
+.bg-warning {
+    background-color: #11aaec;
+}
+
+.pnlCatalogo {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 250px;
+    margin: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    text-align: left;
+}

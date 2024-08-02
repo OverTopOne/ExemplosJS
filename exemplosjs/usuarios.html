@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários de Teste via REST</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="format.css">
+    <link rel="stylesheet" href="receitas.css">
+</head>
+<body class="container bg-warning">
+    <nav>
+        <ul>
+            <li><a href="usuarios.html">Users</a></li>
+        </ul>
+    </nav>
+
+    <h1>Usuários de Teste via REST</h1>
+  
+    <div id="usuarios" class="container-fluid">
+        <div class="row">
+
+            <div class="card col-md-4 p-2 m-3" v-for="(user, index) in users" :key="index">
+                <img :src="user.avatar" class="card-img-top" :alt="user.first_name + ' ' + user.last_name">
+                <div class="card-body">
+                    <h5 class="card-title">{{ user.first_name }} {{ user.last_name }}</h5>
+                    <p class="card-text">{{ user.email }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Receitas Souza 2024 - Todos direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="script.js"></script> 
+</body>
+</html>

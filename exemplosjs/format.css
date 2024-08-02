@@ -1,0 +1,79 @@
+
+nav {
+    background-color: rgb(224, 131, 18); 
+    border: 1px solid;
+    color: #000000;
+    padding: 1px;
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1px;
+    margin: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+
+.container-fluid {
+    background-color: #f5f5f5; 
+    padding: 20px;
+}
+
+.pnlCatalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    background-color: rgb(224, 131, 18);
+}
+
+.card {
+    width: 250px;
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    text-align: left;
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+
+}
+
+footer {
+    width: 100%;
+    background-color: #ffffff; 
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
